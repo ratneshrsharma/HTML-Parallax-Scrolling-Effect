@@ -1,0 +1,278 @@
+.banner {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100svh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 17;
+  }
+
+  .shadow {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 30;
+    background: linear-gradient(to top, #151515, transparent);
+  }
+
+  .person {
+    position: absolute;
+    bottom: -200px;
+    left: 0px;
+    z-index: 20;
+    width: 42%;
+  }
+
+  .mountain1 {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    z-index: 19;
+    width: 75%;
+  }
+
+  .mountain2 {
+    position: absolute;
+    bottom: -310px;
+    left: -80px;
+    z-index: 18;
+    width: 80%;
+  }
+
+  .mountain3 {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 17;
+    width: 55%;
+  }
+
+  .sky {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+  }
+
+  .big-title {
+    position: absolute;
+    top: calc(50% - 2rem);
+    z-index: 18;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+  .typing-container {
+    font-family: $primary-font;
+
+    span.typed-text {
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      color: $text-white;
+    }
+
+    span.cursor {
+      display: inline-block;
+      background-color: #ccc;
+      margin-left: 0.1rem;
+      width: 3px;
+      animation: blink 1s infinite;
+
+      &.typing {
+        animation: none;
+      }
+    }
+  }
+
+  @media (max-width: 1650px) {
+    height: 700px;
+
+    .big-title {
+      top: 180px;
+      font-size: 6rem;
+      opacity: 1 !important;
+    }
+
+    .sky {
+      width: auto;
+      height: 1300px;
+      bottom: 0;
+    }
+
+    .mountain3 {
+      right: 0;
+      bottom: -0%;
+      width: 80%;
+    }
+
+    .mountain2 {
+      left: -20%;
+      bottom: -35%;
+      width: 100%;
+    }
+
+    .mountain1 {
+      right: 0;
+      bottom: -20%;
+      width: 100%;
+    }
+
+    .person {
+      bottom: -220px;
+      width: 50%;
+      left: 0%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    // height: 300px;
+
+    &::after {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .big-title {
+      top: 180px;
+      font-size: 3rem;
+      opacity: 1 !important;
+    }
+
+    .sky {
+      width: auto;
+      height: 800px;
+      bottom: 0;
+    }
+
+    .mountain3 {
+      right: -20%;
+      bottom: 30px;
+      width: 150%;
+    }
+
+    .mountain2 {
+      left: -55%;
+      bottom: -230px;
+      width: 150%;
+    }
+
+    .mountain1 {
+      right: -20%;
+      bottom: -150px;
+      width: 150%;
+    }
+
+    .person {
+      bottom: -350px;
+      width: 100%;
+      left: -30%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    height: 600px;
+
+    &::after {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .shadow {
+      bottom: -10px;
+    }
+    .big-title {
+      top: 180px;
+      font-size: 2rem;
+      opacity: 1 !important;
+    }
+
+    .sky {
+      width: auto;
+      height: 800px;
+      bottom: 0;
+    }
+
+    .mountain3 {
+      right: -20%;
+      bottom: 30px;
+      width: 150%;
+    }
+
+    .mountain2 {
+      left: -55%;
+      bottom: -210px;
+      width: 150%;
+    }
+
+    .mountain1 {
+      right: -20%;
+      bottom: -150px;
+      width: 150%;
+    }
+
+    .person {
+      bottom: -250px;
+      width: 100%;
+      left: -30%;
+    }
+  }
+
+  @media (max-width: 680px) {
+    height: 500px;
+
+    .mountain3 {
+      right: -10%;
+      bottom: 60px;
+    }
+
+    .mountain2 {
+      left: -30%;
+      bottom: -70px;
+    }
+
+    .mountain1 {
+      right: -10%;
+      bottom: -50px;
+    }
+
+    .person {
+      bottom: -100px;
+      left: -30%;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML - Parallax Scrolling Effect</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h3 class="logo"><span>Ratnesh</span> Sharma</h3>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="typing-container">
+        <h1 class="big-title translate" data-speed="0.1">
+          <!-- <span id="sentence" class="sentence">Here, take this </span> -->
+          <span class="typed-text"></span>
+          <span class="cursor">&nbsp;</span>
+        </h1>
+      </div>
+      <img
+        src="assets/img/person.png"
+        class="person translate"
+        data-speed="-0.25"
+        alt=""
+      />
+      <img
+        src="assets/img/mountain1.png"
+        class="mountain1 translate"
+        data-speed="-0.2"
+        alt=""
+      />
+      <img
+        src="assets/img/mountain2.png"
+        class="mountain2 translate"
+        data-speed="0.4"
+        alt=""
+      />
+      <img
+        src="assets/img/mountain3.png"
+        class="mountain3 translate"
+        data-speed="0.3"
+        alt=""
+      />
+      <img
+        src="assets/img/sky.jpg"
+        class="sky translate"
+        data-speed="0.5"
+        alt=""
+      />
+      <div class="shadow"></div>
+    </section>
+    <section
+      id="about"
+      style="
+        background-image: url(assets/img/black-abstract-dark-polygon-design.png);
+      "
+    >
+      <div class="container">
+        <div class="content">
+          <h3 class="title">Introduction</h3>
+          <p>
+            I have experience developing websites and web applications using
+            <b>HTML, CSS, SCSS, LESS, JavaScript</b> and frameworks like
+            <b><em>ReactJS, NextJS, TypeScriptJS and WordPress</em></b
+            >.
+          </p>
+          <p>
+            I pick things up quickly and collaborate with the clients to develop
+            effective, scalable, and user-friendly solutions that address
+            challenges in the real world.
+          </p>
+          <p>
+            <strong>Let's team up to make your ideas a reality!</strong>
+          </p>
+        </div>
+        <div class="imgContainer">
+          <img src="assets/img/dev-avatar.png" class="developer" alt="" />
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/typing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

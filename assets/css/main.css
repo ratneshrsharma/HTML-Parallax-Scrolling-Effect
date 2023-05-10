@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  background-color: #151515;
+  position: relative;
+}
+section img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+section .container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media (max-width: 767px) {
+  section .container {
+    grid-template-columns: 1fr;
+    padding: 2.4rem;
+  }
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  z-index: 80;
+  overflow: hidden;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 30;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+}
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+header nav .logo span {
+  font-weight: 100;
+}
+header .hamburger-menu {
+  width: 1.55rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .hamburger-menu .bar {
+  position: relative;
+  width: 2.4rem;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+header .hamburger-menu .bar:before, header .hamburger-menu .bar:after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 2px;
+}
+header .hamburger-menu .bar:before {
+  transform: translateY(-8px);
+}
+header .hamburger-menu .bar:after {
+  transform: translateY(8px);
+}
+@media (max-width: 767px) {
+  header nav .logo {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+  header nav .logo span {
+    font-weight: 400;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100svh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 17;
+}
+.banner .shadow {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  z-index: 30;
+  background: linear-gradient(to top, #151515, transparent);
+}
+.banner .person {
+  position: absolute;
+  bottom: -200px;
+  left: 0px;
+  z-index: 20;
+  width: 42%;
+}
+.banner .mountain1 {
+  position: absolute;
+  bottom: -150px;
+  right: 0;
+  z-index: 19;
+  width: 75%;
+}
+.banner .mountain2 {
+  position: absolute;
+  bottom: -310px;
+  left: -80px;
+  z-index: 18;
+  width: 80%;
+}
+.banner .mountain3 {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 17;
+  width: 55%;
+}
+.banner .sky {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+}
+.banner .big-title {
+  position: absolute;
+  top: calc(50% - 2rem);
+  z-index: 18;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #fff;
+}
+.banner .typing-container {
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.banner .typing-container span.typed-text {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: #f6f6f6;
+}
+.banner .typing-container span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.banner .typing-container span.cursor.typing {
+  animation: none;
+}
+@media (max-width: 1650px) {
+  .banner {
+    height: 700px;
+  }
+  .banner .big-title {
+    top: 180px;
+    font-size: 6rem;
+    opacity: 1 !important;
+  }
+  .banner .sky {
+    width: auto;
+    height: 1300px;
+    bottom: 0;
+  }
+  .banner .mountain3 {
+    right: 0;
+    bottom: 0%;
+    width: 80%;
+  }
+  .banner .mountain2 {
+    left: -20%;
+    bottom: -35%;
+    width: 100%;
+  }
+  .banner .mountain1 {
+    right: 0;
+    bottom: -20%;
+    width: 100%;
+  }
+  .banner .person {
+    bottom: -220px;
+    width: 50%;
+    left: 0%;
+  }
+}
+@media (max-width: 1200px) {
+  .banner::after {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .banner .big-title {
+    top: 180px;
+    font-size: 3rem;
+    opacity: 1 !important;
+  }
+  .banner .sky {
+    width: auto;
+    height: 800px;
+    bottom: 0;
+  }
+  .banner .mountain3 {
+    right: -20%;
+    bottom: 30px;
+    width: 150%;
+  }
+  .banner .mountain2 {
+    left: -55%;
+    bottom: -230px;
+    width: 150%;
+  }
+  .banner .mountain1 {
+    right: -20%;
+    bottom: -150px;
+    width: 150%;
+  }
+  .banner .person {
+    bottom: -350px;
+    width: 100%;
+    left: -30%;
+  }
+}
+@media (max-width: 767px) {
+  .banner {
+    height: 600px;
+  }
+  .banner::after {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .banner .shadow {
+    bottom: -10px;
+  }
+  .banner .big-title {
+    top: 180px;
+    font-size: 2rem;
+    opacity: 1 !important;
+  }
+  .banner .sky {
+    width: auto;
+    height: 800px;
+    bottom: 0;
+  }
+  .banner .mountain3 {
+    right: -20%;
+    bottom: 30px;
+    width: 150%;
+  }
+  .banner .mountain2 {
+    left: -55%;
+    bottom: -210px;
+    width: 150%;
+  }
+  .banner .mountain1 {
+    right: -20%;
+    bottom: -150px;
+    width: 150%;
+  }
+  .banner .person {
+    bottom: -250px;
+    width: 100%;
+    left: -30%;
+  }
+}
+@media (max-width: 680px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .mountain3 {
+    right: -10%;
+    bottom: 60px;
+  }
+  .banner .mountain2 {
+    left: -30%;
+    bottom: -70px;
+  }
+  .banner .mountain1 {
+    right: -10%;
+    bottom: -50px;
+  }
+  .banner .person {
+    bottom: -100px;
+    left: -30%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+section {
+  overflow-x: hidden;
+}
+section#about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
+}
+section#about::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+section#about .content {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+}
+section#about .content .title {
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+section#about .content strong {
+  font-weight: 500;
+}
+section#about .content p {
+  margin: 0 0 2rem;
+}
+section#about .imgContainer .developer {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  section#about .content {
+    font-size: 1.6rem;
+  }
+  section#about .content .title {
+    font-size: 2.4rem;
+  }
+  section#about .imgContainer .developer {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
