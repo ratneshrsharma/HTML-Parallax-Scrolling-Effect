@@ -43,18 +43,18 @@
 
   .mountain2 {
     position: absolute;
-    bottom: -310px;
-    left: -80px;
-    z-index: 18;
+    bottom: -30%;
+    left: -30%;
+    z-index: 17;
     width: 80%;
   }
 
   .mountain3 {
     position: absolute;
-    bottom: 10px;
+    bottom: -10%;
     right: 0;
-    z-index: 17;
-    width: 55%;
+    z-index: 18;
+    width: 65%;
   }
 
   .sky {
@@ -68,7 +68,7 @@
   .big-title {
     position: absolute;
     top: calc(50% - 2rem);
-    z-index: 18;
+    z-index: 50;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
@@ -101,7 +101,7 @@
   }
 
   @media (max-width: 1650px) {
-    height: 700px;
+    height: 100svh;
 
     .big-title {
       top: 180px;
@@ -149,7 +149,7 @@
 
     .big-title {
       top: 180px;
-      font-size: 3rem;
+      font-size: 4rem;
       opacity: 1 !important;
     }
 
@@ -160,15 +160,15 @@
     }
 
     .mountain3 {
-      right: -20%;
-      bottom: 30px;
-      width: 150%;
+      right: -25%;
+      bottom: 10%;
+      width: 100%;
     }
 
     .mountain2 {
-      left: -55%;
-      bottom: -230px;
-      width: 150%;
+      left: -30%;
+      bottom: -5%;
+      width: 100%;
     }
 
     .mountain1 {
@@ -195,8 +195,10 @@
     }
     .big-title {
       top: 180px;
-      font-size: 2rem;
+      font-size: 3.5rem;
+      letter-spacing: normal;
       opacity: 1 !important;
+      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     }
 
     .sky {
@@ -206,15 +208,15 @@
     }
 
     .mountain3 {
-      right: -20%;
-      bottom: 30px;
-      width: 150%;
+      right: -40%;
+      bottom: -10%;
+      width: 130%;
     }
 
     .mountain2 {
-      left: -55%;
-      bottom: -210px;
-      width: 150%;
+      left: -40%;
+      bottom: 0%;
+      width: 100%;
     }
 
     .mountain1 {
@@ -232,15 +234,18 @@
 
   @media (max-width: 680px) {
     height: 500px;
+    .big-title {
+      font-size: 2.5rem;
+    }
 
     .mountain3 {
-      right: -10%;
-      bottom: 60px;
+      right: -30%;
+      bottom: 10%;
     }
 
     .mountain2 {
       left: -30%;
-      bottom: -70px;
+      bottom: 10%;
     }
 
     .mountain1 {
